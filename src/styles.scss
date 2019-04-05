@@ -1,0 +1,45 @@
+@import '~antd/dist/antd.css';
+
+#shapeCanvas{
+    border: 1px solid;
+}
+.canvas-container{
+    margin: 10px 0;
+    background: #f0f0f0;
+    position: relative;
+    width: 750px;
+    height: 500px;
+}
+.dot {
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid red;
+    background: none;
+}
+button{cursor: pointer}
+.ui-footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.shape-info-list,
+.canvas-container{
+    display: inline-block;
+    vertical-align: top;
+}
+.shape-info-list{
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 50px 0 0;
+    li{
+        padding: 3px 0;
+        &:nth-child(1){
+            border-bottom: 1px solid;
+        }
+    }
+}
